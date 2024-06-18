@@ -1,0 +1,168 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    width: '80%',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  backButton: {
+    position: 'absolute',
+    top: height * 0.05,
+  },
+  backIcon: {
+    width: 30,
+    height: 30,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '500',
+    color: '#1D1E1D',
+    top: height * 0.12,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  miniTitleNome: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_500Medium',
+    top: height * 0.15,
+  },
+  miniTitleCpf: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_500Medium',
+    top: height * 0.17,
+  },
+  miniTitleTelefone: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_500Medium',
+    top: height * 0.19,
+  },
+  miniTitleGender: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_500Medium',
+    top: height * 0.21,
+  },
+  formContainer: {
+    width: '100%',
+  },
+  inputNome: {
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: '#E5E7E7',
+    borderRadius: 18,
+    paddingTop: 15,
+    top: height * 0.15,
+    paddingBottom: 12,
+    paddingHorizontal: 20,
+    fontSize: 16,
+    color: '#ABB0AF',
+    fontFamily: 'Poppins_400Regular',
+  },
+  inputCpf: {
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: '#E5E7E7',
+    borderRadius: 18,
+    paddingTop: 15,
+    top: height * 0.17,
+    paddingBottom: 12,
+    paddingHorizontal: 20,
+    fontSize: 16,
+    color: '#ABB0AF',
+    fontFamily: 'Poppins_400Regular',
+  },
+  inputTelefone: {
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: '#E5E7E7',
+    borderRadius: 18,
+    paddingTop: 15,
+    top: height * 0.19,
+    paddingBottom: 12,
+    paddingHorizontal: 20,
+    fontSize: 16,
+    color: '#ABB0AF',
+    fontFamily: 'Poppins_400Regular',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  inlineFields: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    top: height * 0.21,
+  },
+  genderOption: {
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: '#E5E7E7',
+    borderRadius: 18,
+    width: '34%',
+    height: 55,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'Poppins_400Regular',
+  },
+  genderOptionText: {
+    color: '#ABB0AF',
+    fontFamily: 'Poppins_400Regular',
+    fontSize: 16,
+  },
+  selectedOption: {
+    backgroundColor: '#2196F3',
+    color: '#FFFFFF',
+    borderColor: '#2196F3',
+  },
+  selectedOptionText: {
+    color: '#FFFFFF',
+    fontFamily: 'Poppins_400Regular',
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: height * 0.05,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  nextButton: {
+    backgroundColor: '#2196F3',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%',
+    alignSelf: 'center',
+  },
+  nextButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    textAlign: 'center',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  disabledButton: {
+    backgroundColor: 'rgba(33, 150, 243, 0.5)', // 50% de transparência
+  },
+  disabledButtonText: {
+    color: 'rgba(255, 255, 255, 0.5)',
+  },
+});
+
+export default styles;

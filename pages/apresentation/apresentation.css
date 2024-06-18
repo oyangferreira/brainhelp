@@ -1,0 +1,84 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { height, width } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  background: {
+    flexGrow: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    width: '90%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+  title: {
+    fontSize: 22,
+    fontFamily: 'Poppins_600SemiBold',
+    textAlign: 'center',
+    color: '#404040',
+    bottom: height * 0.01,
+  },
+  textWrapper: {
+    position: 'absolute',
+    top: height * 0.75,  
+    width: '100%',
+    alignItems: 'center', 
+  },
+  carouselItem: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+  },
+  carouselImage: {
+    width: '100%',
+    top: height * 0.1,
+    resizeMode: 'contain',
+  },
+  textContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: height * 0.3,
+  },
+  carouselText: {
+    fontSize: 16,
+    textAlign: 'center',
+    color: '#6E6E6E',
+    lineHeight: 25,
+    fontFamily: 'Poppins_400Regular',
+  },
+  carouselIndicatorContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 20,
+  },
+  carouselIndicator: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: '#D3D3D3', /* Cinza por padrão */
+    marginHorizontal: 5, 
+  },
+  bottomRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'center',
+    justifyContent: 'space-between',
+    position: 'absolute',
+    bottom: height * 0.02,
+    width: '90%',
+  },
+  skipText: {
+    fontSize: 14,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  nextButton: {
+    width: 40,
+    height: 40,
+  },
+});
+
+export default styles;

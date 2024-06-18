@@ -1,0 +1,74 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  background: {
+    flexGrow: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    width: '80%',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '500',
+    color: '#1D1E1D',
+    top: height * 0.12,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  imgContainer: { 
+    alignItems: 'center',
+  },
+  correctImage: {
+    width: 80,
+    height: 80,
+    top: height * 0.12,
+  },
+  text: { 
+    fontSize: 16,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_400Regular',
+    top: height * 0.14,
+    textAlign: 'justify',
+    alignItems: 'center',
+  },
+  textTwo: { 
+    fontSize: 16,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_400Regular',
+    top: height * 0.17,
+    textAlign: 'justify',
+    alignItems: 'center',
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: height * 0.05,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  nextButton: {
+    backgroundColor: '#2196F3',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%',
+    alignSelf: 'center',
+  },
+  nextButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    textAlign: 'center',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+});
+
+export default styles;

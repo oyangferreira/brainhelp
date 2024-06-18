@@ -1,0 +1,102 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  background: {
+    flexGrow: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    width: '80%',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  backButton: {
+    position: 'absolute',
+    top: height * 0.05,
+  },
+  backIcon: {
+    width: 30,
+    height: 30,
+  },
+  backText: {
+    color: '#FF7800',
+    fontSize: 16,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '500',
+    color: '#1D1E1D',
+    top: height * 0.12,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  checkboxContainer: {
+    top: height * 0.15,
+  },
+  checkboxRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  checkbox: {
+    width: 10,
+    height: 10,
+    borderWidth: 0,
+    borderColor: '#ABB0AF',
+    marginRight: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+  },
+  checkboxText: {
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_400Regular',
+  },
+  checkboxLabel: {
+    fontSize: 16,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_400Regular',
+    marginTop: 2,
+  },
+  divider: {
+    borderBottomColor: '#E5E7E7',
+    borderBottomWidth: 1,
+    marginBottom: 20,
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: height * 0.05,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  nextButton: {
+    backgroundColor: '#2196F3',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%',
+    alignSelf: 'center',
+  },
+  nextButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    textAlign: 'center',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  checked: {
+    backgroundColor: '#2196F3',
+  },
+  checkedIcon: {
+    width: 40, // Redimensiona a largura
+    height: 40, // Redimensiona a altura
+  },
+});
+
+export default styles;

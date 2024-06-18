@@ -1,0 +1,143 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  background: {
+    flexGrow: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    width: '80%',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  backButton: {
+    position: 'absolute',
+    top: height * 0.05,
+  },
+  backIcon: {
+    width: 30,
+    height: 30,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '500',
+    color: '#1D1E1D',
+    top: height * 0.12,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  miniTitleEmail: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_500Medium',
+    top: height * 0.15, // 10% of the screen height
+  },
+  miniTitleSenha: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_500Medium',
+    top: height * 0.16, // 10% of the screen height
+  },
+  formContainer: {
+    width: '100%', 
+  },
+  inputEmail: {
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: '#E5E7E7',
+    borderRadius: 18,
+    paddingTop: 15,
+    top: height * 0.15, // 10% of the screen height
+    paddingBottom: 12,
+    paddingHorizontal: 20,
+    fontSize: 16,
+    color: '#ABB0AF',
+    fontFamily: 'Poppins_400Regular',
+  },
+  inputSenha: {
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: '#E5E7E7',
+    borderRadius: 18,
+    paddingTop: 15,
+    top: height * 0.16, // 10% of the screen height
+    paddingBottom: 12,
+    paddingHorizontal: 20,
+    fontSize: 16,
+    color: '#ABB0AF',
+    fontFamily: 'Poppins_400Regular',
+  },
+  forgotPasswordButton: {
+    alignSelf: 'flex-end',
+    top: height * 0.17, // 10% of the screen height
+  },
+  forgotPasswordText: {
+    fontSize: 12,
+    color: '#2196F3',
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  problemLoginButton: {
+    alignSelf: 'flex-end',
+    position: 'absolute',
+    top: height * 0.055, // 10% of the screen height
+  },
+  problemLoginText: {
+    fontSize: 12,
+    color: '#2196F3',
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: height * 0.05, // 10% of the screen height
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  loginButton: {
+    backgroundColor: '#2196F3',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%',
+    bottom: height * 0.02,
+    alignSelf: 'center',
+  },
+  loginButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    textAlign: 'center',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  signupButton: {
+    borderWidth: 1,
+    borderColor: '#2196F3',
+    backgroundColor: '#FFF',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%', // Largura de 80%
+    alignSelf: 'center', // Centralização horizontal
+  },
+  signupButtonText: {
+    color: '#2196F3',
+    fontSize: 16,
+    textAlign: 'center',
+    fontWeight: '600',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+});
+
+export default styles;
